@@ -1,0 +1,51 @@
+PATIENT ID,PATIENT NAME,GENDER,AGE,CONTACT NO,DATE OF ADMISSION,DISEASE
+PAT001,Rajesh Kumar,Male,45,9876543210,15-11-2024,Diabetes Type 2
+PAT002,Priya Sharma,Female,32,9876543211,16-11-2024,Dengue Fever
+PAT003,Amit Patel,Male,58,9876543212,17-11-2024,Coronary Artery Disease
+PAT004,Sunita Reddy,Female,28,9876543213,18-11-2024,Typhoid Fever
+PAT005,Vikram Singh,Male,62,9876543214,19-11-2024,Chronic Obstructive Pulmonary Disease
+PAT006,Anita Desai,Female,41,9876543215,20-11-2024,Hypertension
+PAT007,Suresh Nair,Male,35,9876543216,21-11-2024,Malaria
+PAT008,Kavita Iyer,Female,52,9876543217,22-11-2024,Breast Cancer
+PAT009,Ramesh Gupta,Male,48,9876543218,23-11-2024,Acute Myocardial Infarction
+PAT010,Deepa Menon,Female,29,9876543219,24-11-2024,Pneumonia
+PAT011,Arun Krishnan,Male,55,9876543220,25-11-2024,Stroke
+PAT012,Meena Rao,Female,38,9876543221,26-11-2024,Gastroenteritis
+PAT013,Karthik Pillai,Male,42,9876543222,27-11-2024,Tuberculosis
+PAT014,Lakshmi Bhat,Female,65,9876543223,28-11-2024,Osteoarthritis
+PAT015,Vinod Kumar,Male,31,9876543224,29-11-2024,Appendicitis
+PAT016,Pooja Shah,Female,26,9876543225,30-11-2024,Urinary Tract Infection
+PAT017,Sanjay Verma,Male,50,9876543226,01-12-2024,Liver Cirrhosis
+PAT018,Nisha Agarwal,Female,44,9876543227,02-12-2024,Asthma
+PAT019,Mohan Das,Male,68,9876543228,03-12-2024,Chronic Kidney Disease
+PAT020,Rekha Joshi,Female,36,9876543229,04-12-2024,Chikungunya
+PAT021,Prakash Mishra,Male,47,9876543230,05-12-2024,Peptic Ulcer
+PAT022,Geeta Pandey,Female,53,9876543231,06-12-2024,Thyroid Disorder
+PAT023,Ravi Chopra,Male,39,9876543232,07-12-2024,Hepatitis A
+PAT024,Sarita Kulkarni,Female,60,9876543233,08-12-2024,Osteoporosis
+PAT025,Manoj Tiwari,Male,33,9876543234,09-12-2024,Road Traffic Accident
+PAT026,Anjali Bhatt,Female,27,9876543235,10-12-2024,Anemia
+PAT027,Ashok Mehta,Male,56,9876543236,11-12-2024,Prostate Enlargement
+PAT028,Divya Kapoor,Female,34,9876543237,12-12-2024,Migraine
+PAT029,Nitin Sinha,Male,43,9876543238,13-12-2024,Leptospirosis
+PAT030,Rashmi Dubey,Female,49,9876543239,14-12-2024,Depression
+PAT031,Sunil Bansal,Male,61,9876543240,15-12-2024,Heart Failure
+PAT032,Madhuri Saxena,Female,37,9876543241,16-12-2024,Jaundice
+PAT033,Dinesh Yadav,Male,54,9876543242,17-12-2024,Chronic Bronchitis
+PAT034,Usha Tomar,Female,46,9876543243,18-12-2024,Gallstones
+PAT035,Harish Chandra,Male,40,9876543244,19-12-2024,Influenza
+PAT036,Sneha Gupta,Female,25,9876543245,20-12-2024,Food Poisoning
+PAT037,Ajay Shukla,Male,57,9876543246,21-12-2024,Angina Pectoris
+PAT038,Pallavi Rao,Female,30,9876543247,22-12-2024,Ectopic Pregnancy
+PAT039,Naveen Rawat,Male,51,9876543248,23-12-2024,Pancreatitis
+PAT040,Shilpa Jain,Female,42,9876543249,24-12-2024,Rheumatoid Arthritis
+PAT041,Rajiv Arora,Male,64,9876543250,25-12-2024,Lung Cancer
+PAT042,Vandana Singh,Female,35,9876543251,26-12-2024,Pre-eclampsia
+PAT043,Mahesh Tripathi,Male,45,9876543252,27-12-2024,Renal Stones
+PAT044,Swati Chauhan,Female,39,9876543253,28-12-2024,Skin Infection
+PAT045,Yogesh Sharma,Male,59,9876543254,29-12-2024,Diabetic Neuropathy
+PAT046,Neha Pathak,Female,28,9876543255,30-12-2024,Conjunctivitis
+PAT047,Pankaj Jha,Male,48,9876543256,31-12-2024,Gout
+PAT048,Ritu Malhotra,Female,55,9876543257,01-01-2025,Cataract
+PAT049,Bharat Soni,Male,38,9876543258,02-01-2025,Epilepsy
+PAT050,Kiran Bose,Female,31,9876543259,03-01-2025,Ovarian Cyst

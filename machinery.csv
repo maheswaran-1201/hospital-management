@@ -1,0 +1,51 @@
+MACHINERY ID,MACHINERY NAME,MANUFACTURER,CATEGORY,QUANTITY,DATE OF PURCHASE,PRICE
+M001,Patient Monitor,Philips,Monitoring Equipment,15,15-03-2022,185000
+M002,Ventilator,Medtronic,Respiratory,8,20-06-2021,650000
+M003,ECG Machine,GE Healthcare,Diagnostic Equipment,12,10-01-2023,125000
+M004,X-Ray Machine,Siemens Healthineers,Radiology,4,05-11-2020,2500000
+M005,Ultrasound Machine,Philips,Radiology,6,18-08-2022,850000
+M006,Defibrillator,Medtronic,Emergency Equipment,10,25-02-2023,275000
+M007,Infusion Pump,Fresenius,Treatment Equipment,25,12-12-2021,95000
+M008,Anesthesia Machine,GE Healthcare,Anesthesiology,5,30-09-2020,1200000
+M009,CT Scanner,Siemens Healthineers,Radiology,2,22-07-2019,8500000
+M010,MRI Scanner,Philips,Radiology,1,14-05-2018,15000000
+M011,Surgical Table,Cardinal Health,Surgery,8,08-04-2022,325000
+M012,Dialysis Machine,Fresenius Medical Care,Nephrology,6,16-10-2021,550000
+M013,Pulse Oximeter,Medtronic,Monitoring Equipment,30,20-03-2023,12000
+M014,Syringe Pump,Fresenius,Treatment Equipment,20,11-11-2022,45000
+M015,Surgical Laser,Johnson & Johnson,Surgery,3,05-08-2021,1800000
+M016,Blood Gas Analyzer,Siemens Healthineers,Laboratory Equipment,4,28-06-2022,425000
+M017,Autoclave Sterilizer,Cardinal Health,Sterilization,7,15-01-2023,175000
+M018,Centrifuge Machine,3M Company,Laboratory Equipment,5,12-09-2021,85000
+M019,Microscope,Olympus,Laboratory Equipment,10,20-07-2022,95000
+M020,Oxygen Concentrator,Philips,Respiratory,18,25-04-2021,65000
+M021,Nebulizer,Omron,Respiratory,22,18-02-2023,8500
+M022,Weighing Scale,Tanita,General Hospital,15,10-10-2022,15000
+M023,Wheelchair,Invacare,Physical Support,20,22-11-2021,18000
+M024,Hospital Bed Electric,Hill-Rom,General Hospital,50,17-08-2020,125000
+M025,Suction Machine,Medtronic,Surgery,12,14-05-2022,55000
+M026,Endoscope,Olympus,Gastroenterology,4,30-07-2021,950000
+M027,Electrosurgical Unit,Johnson & Johnson,Surgery,6,08-09-2022,285000
+M028,Fetal Monitor,GE Healthcare,Obstetrics,5,05-12-2021,315000
+M029,Incubator,GE Healthcare,Neonatology,8,20-10-2020,425000
+M030,Blood Pressure Monitor,Omron,Monitoring Equipment,35,12-04-2023,8500
+M031,Glucometer,Abbott,Diagnostic Equipment,40,25-08-2022,2500
+M032,Thermometer Digital,Omron,Diagnostic Equipment,50,28-01-2023,850
+M033,Stethoscope,3M Littmann,Diagnostic Equipment,60,15-06-2022,4500
+M034,Holter Monitor,Philips,Cardiovascular,4,08-11-2021,185000
+M035,Stress Test System,GE Healthcare,Cardiovascular,2,18-12-2020,950000
+M036,Ophthalmoscope,Welch Allyn,Ophthalmology,8,22-03-2022,35000
+M037,Otoscope,Welch Allyn,ENT,10,22-03-2022,28000
+M038,Spirometer,Medtronic,Pulmonology,6,15-09-2021,125000
+M039,Electroencephalograph,Nihon Kohden,Neurology,3,10-07-2020,485000
+M040,Electromyography Machine,Nihon Kohden,Neurology,2,28-05-2021,525000
+M041,Treadmill Medical,GE Healthcare,Cardiology,4,14-02-2022,285000
+M042,Colposcope,Olympus,Gynecology,3,25-10-2021,195000
+M043,Cryotherapy Unit,Johnson & Johnson,Dermatology,2,08-07-2022,325000
+M044,Dermatoscope,Heine,Dermatology,5,12-03-2023,45000
+M045,Audiometer,Siemens Healthineers,ENT,4,20-08-2021,155000
+M046,Tympanometer,GSI,ENT,3,18-04-2022,95000
+M047,Bone Densitometer,GE Healthcare,Orthopedics,2,05-09-2020,1250000
+M048,C-Arm X-Ray,Siemens Healthineers,Orthopedics,3,12-06-2021,3500000
+M049,Phototherapy Unit,Philips,Neonatology,6,28-11-2022,165000
+M050,CPAP Machine,Philips,Respiratory,12,08-02-2023,85000
