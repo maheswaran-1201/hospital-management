@@ -103,7 +103,7 @@ python app.py
 ### Step 3: Open in Browser
 Open your web browser and navigate to:
 ```
-http://127.0.0.1:5000/
+[http://127.0.0.1:5000/](https://hospital-management-14cbe.web.app)
 ```
 
 ---
