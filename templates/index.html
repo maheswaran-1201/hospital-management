@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Firebase Import Map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "firebase/app": "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js",
+          "firebase/analytics": "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js"
+        }
+      }
+    </script>
 </head>
 <body>
     <div class="app-layout">
@@ -470,6 +479,8 @@
     <!-- TOAST NOTIFICATION CONTAINER -->
     <div class="toast-container" id="toast-container"></div>
 
+    <!-- Firebase Initialization -->
+    <script type="module" src="{{ url_for('static', filename='js/firebase-init.js') }}"></script>
     <!-- Main JavaScript App -->
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
