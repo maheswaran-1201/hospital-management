@@ -1,89 +1,487 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.19.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.19.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.19.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Hospital Administration Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Firebase Import Map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "firebase/app": "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js",
+          "firebase/analytics": "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js"
         }
-      });
+      }
     </script>
-  </body>
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h2>MediCare</h2>
+                    <span>Hospital Admin</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#dashboard" class="nav-item active" data-tab="dashboard">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-label">Dashboard</span>
+                </a>
+                <a href="#doctors" class="nav-item" data-tab="doctors">
+                    <span class="nav-icon">👨‍⚕️</span>
+                    <span class="nav-label">Doctors</span>
+                </a>
+                <a href="#patients" class="nav-item" data-tab="patients">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-label">Patients</span>
+                </a>
+                <a href="#staff" class="nav-item" data-tab="staff">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-label">Staff</span>
+                </a>
+                <a href="#medicines" class="nav-item" data-tab="medicines">
+                    <span class="nav-icon">💊</span>
+                    <span class="nav-label">Medicines</span>
+                </a>
+                <a href="#machinery" class="nav-item" data-tab="machinery">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-label">Machinery</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="system-status">
+                    <span class="status-dot online"></span>
+                    <div class="status-info">
+                        <span class="status-title">System Status</span>
+                        <span class="status-subtitle">CSV Storage Active</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Top Navigation / Header -->
+            <header class="top-header">
+                <div class="header-title">
+                    <h1 id="page-title">Dashboard Overview</h1>
+                    <p id="page-subtitle">Real-time statistics and hospital management overview</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn btn-secondary btn-icon-only" id="btn-refresh" title="Refresh Data">
+                        🔄
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dynamic Tab Content Views -->
+            <div class="content-body">
+
+                <!-- 1. DASHBOARD VIEW -->
+                <section id="view-dashboard" class="tab-view active">
+                    <!-- Stat Cards Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card blue" data-target-tab="doctors">
+                            <div class="stat-header">
+                                <span class="stat-icon">👨‍⚕️</span>
+                                <span class="stat-badge">Active</span>
+                            </div>
+                            <div class="stat-body">
+                                <h3 id="stat-doctors">--</h3>
+                                <p>Total Doctors</p>
+                            </div>
+                            <div class="stat-footer">
+                                <span>Medical Specialists</span>
+                                <span class="stat-arrow">→</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card green" data-target-tab="patients">
+                            <div class="stat-header">
+                                <span class="stat-icon">👤</span>
+                                <span class="stat-badge success">Admitted</span>
+                            </div>
+                            <div class="stat-body">
+                                <h3 id="stat-patients">--</h3>
+                                <p>Total Patients</p>
+                            </div>
+                            <div class="stat-footer">
+                                <span>Patient Records</span>
+                                <span class="stat-arrow">→</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card purple" data-target-tab="staff">
+                            <div class="stat-header">
+                                <span class="stat-icon">👥</span>
+                                <span class="stat-badge info">Staff</span>
+                            </div>
+                            <div class="stat-body">
+                                <h3 id="stat-staff">--</h3>
+                                <p>Total Staff</p>
+                            </div>
+                            <div class="stat-footer">
+                                <span>Nurses & Technicians</span>
+                                <span class="stat-arrow">→</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card orange" data-target-tab="medicines">
+                            <div class="stat-header">
+                                <span class="stat-icon">💊</span>
+                                <span class="stat-badge warning" id="stat-expiring-badge">0 Warning</span>
+                            </div>
+                            <div class="stat-body">
+                                <h3 id="stat-medicines">--</h3>
+                                <p>Total Medicines</p>
+                            </div>
+                            <div class="stat-footer">
+                                <span>Pharmaceutical Inventory</span>
+                                <span class="stat-arrow">→</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card teal" data-target-tab="machinery">
+                            <div class="stat-header">
+                                <span class="stat-icon">⚙️</span>
+                                <span class="stat-badge alert" id="stat-machinery-badge">0 Low Stock</span>
+                            </div>
+                            <div class="stat-body">
+                                <h3 id="stat-machinery">--</h3>
+                                <p>Total Machinery</p>
+                            </div>
+                            <div class="stat-footer">
+                                <span>Medical Devices</span>
+                                <span class="stat-arrow">→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions & Overview Cards -->
+                    <div class="dashboard-widgets">
+                        <!-- Quick Actions -->
+                        <div class="card widget-card">
+                            <div class="card-header">
+                                <h3>⚡ Quick Actions</h3>
+                                <span class="card-subtitle">Fast record creation</span>
+                            </div>
+                            <div class="quick-actions-grid">
+                                <button class="quick-btn" onclick="openAddModal('doctors')">
+                                    <span class="q-icon">👨‍⚕️</span>
+                                    <span>Add Doctor</span>
+                                </button>
+                                <button class="quick-btn" onclick="openAddModal('patients')">
+                                    <span class="q-icon">👤</span>
+                                    <span>Add Patient</span>
+                                </button>
+                                <button class="quick-btn" onclick="openAddModal('staff')">
+                                    <span class="q-icon">👥</span>
+                                    <span>Add Staff</span>
+                                </button>
+                                <button class="quick-btn" onclick="openAddModal('medicines')">
+                                    <span class="q-icon">💊</span>
+                                    <span>Add Medicine</span>
+                                </button>
+                                <button class="quick-btn" onclick="openAddModal('machinery')">
+                                    <span class="q-icon">⚙️</span>
+                                    <span>Add Machinery</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- System Overview / Expiry Alerts -->
+                        <div class="card widget-card">
+                            <div class="card-header">
+                                <h3>⚠️ Inventory Alerts</h3>
+                                <span class="card-subtitle">Critical stock & expiry monitoring</span>
+                            </div>
+                            <div class="alerts-container" id="dashboard-alerts">
+                                <div class="alert-item info">
+                                    <span class="alert-icon">ℹ️</span>
+                                    <div class="alert-text">
+                                        <strong>CSV Storage Engine</strong>
+                                        <p>Data is stored and synced with backend CSV files.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Patients Table Widget -->
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>📋 Recent Patient Admissions</h3>
+                                <span class="card-subtitle">Latest admitted patients</span>
+                            </div>
+                            <button class="btn btn-sm btn-secondary" onclick="switchTab('patients')">View All Patients</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Patient ID</th>
+                                        <th>Patient Name</th>
+                                        <th>Gender</th>
+                                        <th>Age</th>
+                                        <th>Contact No</th>
+                                        <th>Date of Admission</th>
+                                        <th>Disease</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recent-patients-tbody">
+                                    <tr><td colspan="7" class="text-center">Loading recent records...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. DOCTORS VIEW -->
+                <section id="view-doctors" class="tab-view">
+                    <div class="section-header">
+                        <div class="filter-bar">
+                            <input type="text" class="table-search" placeholder="Search doctors by ID, name, specialization..." onkeyup="filterTable('doctors', this.value)">
+                        </div>
+                        <button class="btn btn-primary" onclick="openAddModal('doctors')">
+                            <span>➕ Add Doctor</span>
+                        </button>
+                    </div>
+
+                    <div class="card table-card">
+                        <div class="table-responsive">
+                            <table class="data-table" id="table-doctors">
+                                <thead>
+                                    <tr>
+                                        <th>Doctor ID</th>
+                                        <th>Doctor Name</th>
+                                        <th>Gender</th>
+                                        <th>Age</th>
+                                        <th>Contact No</th>
+                                        <th>Specialization</th>
+                                        <th>Experience</th>
+                                        <th>License No</th>
+                                        <th>Salary (₹)</th>
+                                        <th class="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td colspan="10" class="text-center">Loading doctors...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. PATIENTS VIEW -->
+                <section id="view-patients" class="tab-view">
+                    <div class="section-header">
+                        <div class="filter-bar">
+                            <input type="text" class="table-search" placeholder="Search patients by ID, name, disease..." onkeyup="filterTable('patients', this.value)">
+                        </div>
+                        <button class="btn btn-primary" onclick="openAddModal('patients')">
+                            <span>➕ Add Patient</span>
+                        </button>
+                    </div>
+
+                    <div class="card table-card">
+                        <div class="table-responsive">
+                            <table class="data-table" id="table-patients">
+                                <thead>
+                                    <tr>
+                                        <th>Patient ID</th>
+                                        <th>Patient Name</th>
+                                        <th>Gender</th>
+                                        <th>Age</th>
+                                        <th>Contact No</th>
+                                        <th>Date of Admission</th>
+                                        <th>Disease</th>
+                                        <th class="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td colspan="8" class="text-center">Loading patients...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. STAFF VIEW -->
+                <section id="view-staff" class="tab-view">
+                    <div class="section-header">
+                        <div class="filter-bar">
+                            <input type="text" class="table-search" placeholder="Search staff by ID, name, designation..." onkeyup="filterTable('staff', this.value)">
+                        </div>
+                        <button class="btn btn-primary" onclick="openAddModal('staff')">
+                            <span>➕ Add Staff</span>
+                        </button>
+                    </div>
+
+                    <div class="card table-card">
+                        <div class="table-responsive">
+                            <table class="data-table" id="table-staff">
+                                <thead>
+                                    <tr>
+                                        <th>Staff ID</th>
+                                        <th>Staff Name</th>
+                                        <th>Gender</th>
+                                        <th>Age</th>
+                                        <th>Contact No</th>
+                                        <th>Designation</th>
+                                        <th>Date Joined</th>
+                                        <th>Salary</th>
+                                        <th class="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td colspan="9" class="text-center">Loading staff records...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. MEDICINES VIEW -->
+                <section id="view-medicines" class="tab-view">
+                    <div class="section-header">
+                        <div class="filter-bar">
+                            <input type="text" class="table-search" placeholder="Search medicines by ID, name, category..." onkeyup="filterTable('medicines', this.value)">
+                            <select id="medicine-expiry-filter" class="table-select" onchange="filterMedicinesByExpiry(this.value)">
+                                <option value="all">All Expiry Statuses</option>
+                                <option value="expired">Expired</option>
+                                <option value="expiring">Expiring Soon (<= 90 days)</option>
+                                <option value="valid">Valid Stock</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="openAddModal('medicines')">
+                            <span>➕ Add Medicine</span>
+                        </button>
+                    </div>
+
+                    <div class="card table-card">
+                        <div class="table-responsive">
+                            <table class="data-table" id="table-medicines">
+                                <thead>
+                                    <tr>
+                                        <th>Medicine ID</th>
+                                        <th>Medicine Name</th>
+                                        <th>Generic Name</th>
+                                        <th>Category</th>
+                                        <th>Expiry Date</th>
+                                        <th>Manufacturer</th>
+                                        <th>Price (₹)</th>
+                                        <th>Expiry Status</th>
+                                        <th class="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td colspan="9" class="text-center">Loading medicines...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. MACHINERY VIEW -->
+                <section id="view-machinery" class="tab-view">
+                    <div class="section-header">
+                        <div class="filter-bar">
+                            <input type="text" class="table-search" placeholder="Search machinery by ID, name, manufacturer..." onkeyup="filterTable('machinery', this.value)">
+                        </div>
+                        <button class="btn btn-primary" onclick="openAddModal('machinery')">
+                            <span>➕ Add Machinery</span>
+                        </button>
+                    </div>
+
+                    <div class="card table-card">
+                        <div class="table-responsive">
+                            <table class="data-table" id="table-machinery">
+                                <thead>
+                                    <tr>
+                                        <th>Machinery ID</th>
+                                        <th>Machinery Name</th>
+                                        <th>Manufacturer</th>
+                                        <th>Category</th>
+                                        <th>Quantity</th>
+                                        <th>Date of Purchase</th>
+                                        <th>Price (₹)</th>
+                                        <th>Stock Status</th>
+                                        <th class="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td colspan="9" class="text-center">Loading machinery...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- MODAL DIALOG FOR ADD / EDIT -->
+    <div class="modal-overlay" id="crud-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modal-title">Form Title</h3>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <form id="crud-form" onsubmit="handleFormSubmit(event)">
+                <div class="modal-body" id="modal-form-fields">
+                    <!-- Dynamic Form Controls -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="btn-modal-save">Save Record</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- DELETE CONFIRMATION MODAL -->
+    <div class="modal-overlay" id="delete-modal">
+        <div class="modal-container modal-sm">
+            <div class="modal-header">
+                <h3>Confirm Deletion</h3>
+                <button class="modal-close" onclick="closeDeleteModal()">✕</button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="delete-icon-wrapper">⚠️</div>
+                <h4>Are you sure?</h4>
+                <p id="delete-modal-text">This record will be permanently deleted from the CSV file.</p>
+            </div>
+            <div class="modal-footer justify-center">
+                <button type="button" class="btn btn-secondary" onclick="closeDeleteModal()">Cancel</button>
+                <button type="button" class="btn btn-danger" id="btn-confirm-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Firebase Initialization -->
+    <script type="module" src="static/js/firebase-init.js"></script>
+    <!-- Main JavaScript App -->
+    <script src="static/js/app.js"></script>
+</body>
 </html>
