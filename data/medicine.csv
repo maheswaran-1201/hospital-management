@@ -1,51 +1,51 @@
 MEDICINE ID,MEDICINE NAME,GENIRIC NAME ,CATEGORY,EXPIRY DATE,MANNUFACTURER,PRICE
 MED001,Crocin,Paracetamol,Analgesic/Antipyretic,31-12-2026,GSK,25
-MED002,Dolo 650,Paracetamol,Analgesic/Antipyretic,15-03-2027,Micro Labs,30
-MED003,Brufen,Ibuprofen,Anti-inflammatory,20-08-2026,Abbott,45
-MED004,Combiflam,Ibuprofen + Paracetamol,Analgesic,10-01-2027,Sanofi,38
-MED005,Augmentin,Amoxicillin + Clavulanic Acid,Antibiotic,25-11-2026,GSK,185
-MED006,Azithral 500,Azithromycin,Antibiotic,18-02-2027,Alembic,95
-MED007,Ciprofloxacin,Ciprofloxacin,Antibiotic,30-10-2026,Cipla,65
-MED008,Amoxil,Amoxicillin,Antibiotic,12-04-2027,Sun Pharma,75
-MED009,Metrogyl,Metronidazole,Antibiotic,15-09-2026,J B Chemicals,42
-MED010,Pantop,Pantoprazole,Antacid/Anti-ulcer,20-05-2027,Aristo Pharma,55
-MED011,Ranitidine,Ranitidine,Antacid,08-07-2026,Zydus Cadila,32
-MED012,Omez,Omeprazole,Anti-ulcer,22-06-2027,Dr. Reddy's,48
-MED013,Gelusil,Aluminium Hydroxide + Magnesium,Antacid,14-08-2027,Pfizer,28
-MED014,Atorva,Atorvastatin,Cholesterol Lowering,05-12-2026,Zydus Cadila,125
-MED015,Rosuvastatin,Rosuvastatin,Cholesterol Lowering,28-03-2027,Sun Pharma,145
-MED016,Amlodipine,Amlodipine,Anti-hypertensive,18-11-2026,Cipla,38
-MED017,Telmisartan,Telmisartan,Anti-hypertensive,25-01-2027,Lupin,52
-MED018,Atenolol,Atenolol,Beta Blocker,12-10-2026,Torrent Pharma,35
-MED019,Metoprolol,Metoprolol,Beta Blocker,08-02-2027,Ajanta Pharma,42
-MED020,Aspirin,Acetylsalicylic Acid,Antiplatelet,15-07-2027,Bayer,15
-MED021,Clopidogrel,Clopidogrel,Antiplatelet,20-09-2026,Dr. Reddy's,85
-MED022,Insulin Glargine,Insulin Glargine,Antidiabetic,30-06-2026,Sanofi,850
-MED023,Metformin,Metformin,Antidiabetic,18-04-2027,Sun Pharma,28
-MED024,Glimepiride,Glimepiride,Antidiabetic,22-12-2026,Torrent Pharma,45
-MED025,Gliclazide,Gliclazide,Antidiabetic,10-05-2027,Cipla,52
-MED026,Levothyroxine,Levothyroxine,Thyroid Hormone,25-08-2027,Abbott,95
-MED027,Diazepam,Diazepam,Anxiolytic/Sedative,08-11-2026,Ranbaxy,38
-MED028,Alprazolam,Alprazolam,Anxiolytic,15-01-2027,Sun Pharma,42
-MED029,Fluoxetine,Fluoxetine,Antidepressant,20-10-2026,Cipla,65
-MED030,Amitriptyline,Amitriptyline,Antidepressant,12-03-2027,Zydus Cadila,48
-MED031,Cetirizine,Cetirizine,Antihistamine,28-06-2027,Cipla,22
-MED032,Loratadine,Loratadine,Antihistamine,15-08-2026,Sun Pharma,28
-MED033,Montelukast,Montelukast,Anti-asthmatic,25-02-2027,Cipla,85
-MED034,Salbutamol,Salbutamol,Bronchodilator,18-12-2026,GSK,75
-MED035,Prednisolone,Prednisolone,Corticosteroid,08-04-2027,Wyeth,55
-MED036,Hydrocortisone,Hydrocortisone,Corticosteroid,30-09-2026,Pfizer,65
-MED037,Warfarin,Warfarin,Anticoagulant,15-05-2027,Sun Pharma,45
-MED038,Heparin,Heparin,Anticoagulant,22-11-2026,Dr. Reddy's,285
-MED039,Furosemide,Furosemide,Diuretic,28-01-2027,Aventis,35
-MED040,Spironolactone,Spironolactone,Diuretic,05-10-2026,Cipla,48
-MED041,Phenytoin,Phenytoin,Anticonvulsant,20-03-2027,Pfizer,52
-MED042,Carbamazepine,Carbamazepine,Anticonvulsant,10-12-2026,Sun Pharma,58
-MED043,Vitamin D3,Cholecalciferol,Vitamin Supplement,22-07-2027,Lupin,125
-MED044,Calcium Carbonate,Calcium Carbonate,Mineral Supplement,18-08-2026,Cipla,45
-MED045,Iron Folic Acid,Ferrous Sulfate + Folic Acid,Supplement,15-02-2027,Emcure,32
-MED046,Ondansetron,Ondansetron,Antiemetic,12-11-2026,Cipla,65
-MED047,Domperidone,Domperidone,Antiemetic,25-04-2027,Torrent Pharma,38
-MED048,Loperamide,Loperamide,Anti-diarrheal,28-09-2026,Johnson & Johnson,48
-MED049,ORS Powder,Oral Rehydration Salts,Rehydration,10-06-2027,FDC Limited,12
-MED050,dolo 600,Paracetamol,Analgesic/Antipyretic,31-12-2026,GSK,25
+MED002,Dolo 650,,Analgesic/Antipyretic,15-03-2027,Micro Labs,30
+MED003,Brufen,,Anti-inflammatory,20-08-2026,Abbott,45
+MED004,Combiflam,,Analgesic,10-01-2027,Sanofi,38
+MED005,Augmentin,,Antibiotic,25-11-2026,GSK,185
+MED006,Azithral 500,,Antibiotic,18-02-2027,Alembic,95
+MED007,Ciprofloxacin,,Antibiotic,30-10-2026,Cipla,65
+MED008,Amoxil,,Antibiotic,12-04-2027,Sun Pharma,75
+MED009,Metrogyl,,Antibiotic,15-09-2026,J B Chemicals,42
+MED010,Pantop,,Antacid/Anti-ulcer,20-05-2027,Aristo Pharma,55
+MED011,Ranitidine,,Antacid,08-07-2026,Zydus Cadila,32
+MED012,Omez,,Anti-ulcer,22-06-2027,Dr. Reddy's,48
+MED013,Gelusil,,Antacid,14-08-2027,Pfizer,28
+MED014,Atorva,,Cholesterol Lowering,05-12-2026,Zydus Cadila,125
+MED015,Rosuvastatin,,Cholesterol Lowering,28-03-2027,Sun Pharma,145
+MED016,Amlodipine,,Anti-hypertensive,18-11-2026,Cipla,38
+MED017,Telmisartan,,Anti-hypertensive,25-01-2027,Lupin,52
+MED018,Atenolol,,Beta Blocker,12-10-2026,Torrent Pharma,35
+MED019,Metoprolol,,Beta Blocker,08-02-2027,Ajanta Pharma,42
+MED020,Aspirin,,Antiplatelet,15-07-2027,Bayer,15
+MED021,Clopidogrel,,Antiplatelet,20-09-2026,Dr. Reddy's,85
+MED022,Insulin Glargine,,Antidiabetic,30-06-2026,Sanofi,850
+MED023,Metformin,,Antidiabetic,18-04-2027,Sun Pharma,28
+MED024,Glimepiride,,Antidiabetic,22-12-2026,Torrent Pharma,45
+MED025,Gliclazide,,Antidiabetic,10-05-2027,Cipla,52
+MED026,Levothyroxine,,Thyroid Hormone,25-08-2027,Abbott,95
+MED027,Diazepam,,Anxiolytic/Sedative,08-11-2026,Ranbaxy,38
+MED028,Alprazolam,,Anxiolytic,15-01-2027,Sun Pharma,42
+MED029,Fluoxetine,,Antidepressant,20-10-2026,Cipla,65
+MED030,Amitriptyline,,Antidepressant,12-03-2027,Zydus Cadila,48
+MED031,Cetirizine,,Antihistamine,28-06-2027,Cipla,22
+MED032,Loratadine,,Antihistamine,15-08-2026,Sun Pharma,28
+MED033,Montelukast,,Anti-asthmatic,25-02-2027,Cipla,85
+MED034,Salbutamol,,Bronchodilator,18-12-2026,GSK,75
+MED035,Prednisolone,,Corticosteroid,08-04-2027,Wyeth,55
+MED036,Hydrocortisone,,Corticosteroid,30-09-2026,Pfizer,65
+MED037,Warfarin,,Anticoagulant,15-05-2027,Sun Pharma,45
+MED038,Heparin,,Anticoagulant,22-11-2026,Dr. Reddy's,285
+MED039,Furosemide,,Diuretic,28-01-2027,Aventis,35
+MED040,Spironolactone,,Diuretic,05-10-2026,Cipla,48
+MED041,Phenytoin,,Anticonvulsant,20-03-2027,Pfizer,52
+MED042,Carbamazepine,,Anticonvulsant,10-12-2026,Sun Pharma,58
+MED043,Vitamin D3,,Vitamin Supplement,22-07-2027,Lupin,125
+MED044,Calcium Carbonate,,Mineral Supplement,18-08-2026,Cipla,45
+MED045,Iron Folic Acid,,Supplement,15-02-2027,Emcure,32
+MED046,Ondansetron,,Antiemetic,12-11-2026,Cipla,65
+MED047,Domperidone,,Antiemetic,25-04-2027,Torrent Pharma,38
+MED048,Loperamide,,Anti-diarrheal,28-09-2026,Johnson & Johnson,48
+MED049,ORS Powder,,Rehydration,10-06-2027,FDC Limited,12
+MED050,dolo 600,,Analgesic/Antipyretic,31-12-2026,GSK,25

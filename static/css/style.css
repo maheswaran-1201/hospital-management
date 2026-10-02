@@ -219,7 +219,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    sticky: top;
+    position: sticky;
     top: 0;
     z-index: 40;
 }
