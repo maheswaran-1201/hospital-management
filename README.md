@@ -6,6 +6,12 @@ This project upgrades a legacy Python CLI application into a modern web administ
 
 ---
 
+## 🌐 Live Website
+
+Visit the deployed application here: [https://hospital-management-14cbe.web.app](https://hospital-management-14cbe.web.app)
+
+---
+
 ## 🌟 Features
 
 - **Dynamic Admin Dashboard Overview**:
